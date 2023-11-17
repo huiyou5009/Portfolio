@@ -1,0 +1,114 @@
+/* title 700 */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+*{
+    /* font-family: 'Open Sans', sans-serif;     */
+}
+
+body{
+    background-color: #F2EDDB;
+    /* background-image: url(background.svg);
+    background-size: cover;
+    
+    background-repeat: no-repeat; */
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+}
+
+
+.website{
+    border-radius: 40px;;
+    width: 23vw;
+    height: 48vh;
+    background-color: #DBDFAA;
+}
+
+.ws_container{
+    display: grid;
+    /* grid-template-rows: 35% 40% 35%; */
+    grid-template-rows: 1fr 1fr 1fr;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 3px;
+    grid-template-areas:
+        ". title title title title ."
+        ". pic pic pic pic ."
+        /* ". introduce introduce link link ." */
+        ". guide guide guide guide .";
+            
+
+    
+}
+
+
+.title{
+    grid-area: title;
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #557A46;
+
+    
+}
+
+img{
+    /* border: 5px solid white; */
+    width: 20vw;
+    height: 22vh;
+    border-radius: 15px;
+
+}
+
+.pic{
+    grid-area: pic;
+    
+ 
+
+}
+
+.introduce{
+    grid-area: introduce;
+    
+
+}
+
+.link{
+    grid-area: link;
+    background-color: #9EB384;
+    border-radius: 15px;
+    /* text-decoration: none; */
+
+}
+.link:hover{
+    color: #243D25;
+    background-color: #B9B4C7;
+    border-radius: 15px;
+}
+.p_style{
+    
+}
+.guide{
+    grid-area: guide;
+    font-size: 140%;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.5;
+    /* color: #83764F; */
+    color: #E8FFCE;
+  
+}
+
+.g_container{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-areas:
+        "introduce link";
+    column-gap: 5px;
+        
+}
