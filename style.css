@@ -1,10 +1,9 @@
-/* title 700 */
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
 *{
-    /* font-family: 'Open Sans', sans-serif;     */
+    font-family: 'Open Sans', sans-serif;    
 }
 
 body{
@@ -23,25 +22,23 @@ body{
 
 .website{
     border-radius: 40px;;
-    width: 23vw;
-    height: 48vh;
+    width: 280px;
+    height: 320px;
     background-color: #DBDFAA;
 }
 
 .ws_container{
     display: grid;
     /* grid-template-rows: 35% 40% 35%; */
-    grid-template-rows: 1fr 1fr 1fr;
-
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    row-gap: 3px;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 5% 90% 5%;
+    /* row-gap: 3px; */
     grid-template-areas:
-        ". title title title title ."
-        ". pic pic pic pic ."
-        /* ". introduce introduce link link ." */
-        ". guide guide guide guide .";
-            
-
+        ". title ."
+        ". pic ."
+        ". guide .";
+        /* ". introduce link."; */
+    position: absolute;
     
 }
 
@@ -52,22 +49,23 @@ body{
     text-align: center;
     letter-spacing: 2px;
     color: #557A46;
+     
+    border: 1px solid;
 
     
 }
 
 img{
     /* border: 5px solid white; */
-    width: 20vw;
-    height: 22vh;
-    border-radius: 15px;
-
-}
-
-.pic{
     grid-area: pic;
-    
- 
+    width: 230px;
+    height: 170px;
+    border-radius: 15px;
+    /* 置中 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
 
 }
 
@@ -79,8 +77,8 @@ img{
 
 .link{
     grid-area: link;
-    background-color: #9EB384;
-    border-radius: 15px;
+    /* background-color: #9EB384;
+    border-radius: 15px; */
     /* text-decoration: none; */
 
 }
@@ -89,26 +87,33 @@ img{
     background-color: #B9B4C7;
     border-radius: 15px;
 }
-.p_style{
-    
+.bw{
+    /* margin: 10px; */
+    width: 100px;
+    height: 50px;
+
 }
-.guide{
-    grid-area: guide;
+/* .guide{
+   
     font-size: 140%;
     font-weight: 600;
     text-decoration: none;
     text-align: center;
-    line-height: 1.5;
-    /* color: #83764F; */
+    line-height: 1.5; 
+    color: #83764F;
     color: #E8FFCE;
   
-}
+} */
 
-.g_container{
-    display: inline-grid;
+.guide{
+    grid-area: guide;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    /* display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-template-areas:
         "introduce link";
-    column-gap: 5px;
-        
+    column-gap: 5px; */
+ 
 }
