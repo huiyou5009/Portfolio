@@ -40,15 +40,22 @@ body{
 
 .list{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
 }
 
 
 .website{
     border-radius: 40px;;
-    width: 280px;
-    height: 320px;
+    /* width: 280px;
+    height: 320px; */
+    width: 320px;
+    height: 340px;
     background-color: #DBDFAA;
+    margin: 20px;
+    white-space:nowrap
+    /* border: 4px solid #618264; */
 }
 
 .ws_container{
@@ -60,7 +67,7 @@ body{
         ". pic ."
         ". guide .";
     /* row-gap: 3px; */
-    position: absolute;
+    position: relative;
     
 }
 
@@ -77,17 +84,24 @@ body{
     
 }
 
+.sw{
+    font-size: 25px;
+}
+
 img{
     /* border: 5px solid white; */
     grid-area: pic;
-    width: 230px;
-    height: 170px;
+    /* width: 230px;
+    height: 170px; */
+    width: 250px;
+    height: 180px; 
     border-radius: 15px;
+    
     /* 置中 */
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -55%);
+    transform: translate(-50%, -53%);  
 
 }
 
@@ -101,14 +115,12 @@ img{
     grid-template-columns: 1fr 1fr; 
     grid-template-areas:
         "about link";
-    column-gap: 5px; */
-
-    
+    column-gap: 5px; */    
 }
 
 .about{
     grid-area: about;
-    
+    display: none;  /* 暫藏 */
 
 }
 
@@ -150,3 +162,9 @@ img{
 }
 
 
+.box{
+    width: 300px;
+    height: 200px;
+    background-color: #6C3428;
+    margin: 20px;
+}

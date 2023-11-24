@@ -1,18 +1,19 @@
 let ab_blog = document.getElementById("ab_blog");
 let lk_blog = document.getElementById("lk_blog");
-
+let ab_mnos = document.getElementById("ab_mnos");
+let lk_mnos = document.getElementById("lk_mnos");
 
 let page ={
     blog:[
         {
-            about: "https://www.google.com",
+            about: "",
             link: "https://huiyou5009.github.io/BLOG/"
         }
     ],
-	bbb:[
+	mnos:[
 		{	
-            about: "https://www.twitter.com",
-            link: "https://www.instagram.com"
+            about: "",
+            link: "https://huiyou5009.github.io/map_tw.gov.os/"
 		}
 	]
 };
@@ -26,6 +27,10 @@ const OpenLink = function(link){
 
 lk_blog.addEventListener("click", function() {
     OpenLink(page.blog[0].link);
+});
+
+lk_mnos.addEventListener("click", function() {
+    OpenLink(page.mnos[0].link);
 });
 
 
